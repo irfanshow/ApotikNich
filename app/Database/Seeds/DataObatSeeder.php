@@ -18,7 +18,7 @@ class DataObatSeeder extends Seeder
         ];
 
         // Simple Queries
-        $this->db->query('INSERT INTO users (nama_obat, harga_obat,stok_obat,deskripsi_obat) VALUES(:nama_obat:, :harga_obat:,:stok_obat:,:deskripsi_obat:)', $data);
+        // $this->db->query('INSERT INTO users (nama_obat, harga_obat,stok_obat,deskripsi_obat) VALUES(:nama_obat:, :harga_obat:,:stok_obat:,:deskripsi_obat:)', $data);
 
         // Using Query Builder
         $this->db->table('data_obat')->insert($data);
