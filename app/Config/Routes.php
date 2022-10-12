@@ -37,6 +37,12 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 $routes->get('/obat', 'Obat::index');
+$routes->get('/create', 'Obat::create');
+$routes->post('/saveObat', 'Obat::saveObat');
+$routes->get('/edit/(:num)', 'Obat::edit/$1');
+$routes->post('/update/(:num)', 'Obat::update/$1');
+$routes->delete('/delete/(:num)', 'Obat::delete/$1');
+$routes->get('/pages', 'Pages::index');
 
 
 /*
