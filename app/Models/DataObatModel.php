@@ -10,7 +10,4 @@ class DataObatModel extends Model
     protected $primaryKey       = 'id_obat';
     protected $useAutoIncrement = true;
     protected $allowedFields    = ['nama_obat', 'harga_obat','stok_obat','deskripsi_obat'];
-
-
-
 }
