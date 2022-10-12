@@ -28,7 +28,7 @@
                     </div>
                     <div class="form-group">
                         <label for="deskripsi_obat">Deskripsi Obat</label>
-                        <textarea class="form-control" id="deskripsi_obat" rows="5"><?=$obat['deskripsi_obat']?></textarea>
+                        <textarea class="form-control" id="deskripsi_obat" rows="5" name="deskripsi_obat"><?=$obat['deskripsi_obat']?></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>

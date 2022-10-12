@@ -33,7 +33,7 @@
                     <a class="btn btn-warning mr-3" href="/edit/<?= $obat['id_obat']?>">Edit</a>
                     <form action = "/delete/<?= $obat['id_obat']?>" method="post">
                         <input name="_method" value="DELETE" type="hidden">
-                        <button type="submit" class="btn btn-danger">Delete</a>
+                        <button type="submit" class="btn btn-danger mr3">Delete</a>
                     </form>
                     </div>
                 </td>
