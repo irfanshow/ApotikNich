@@ -35,6 +35,11 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
+
+//Dashboard
+
+
+//Obat
 $routes->get('/', 'Obat::index');
 $routes->get('/obat', 'Obat::index');
 $routes->get('/create', 'Obat::create');
@@ -43,6 +48,14 @@ $routes->get('/edit/(:num)', 'Obat::edit/$1');
 $routes->post('/update/(:num)', 'Obat::update/$1');
 $routes->delete('/delete/(:num)', 'Obat::delete/$1');
 $routes->get('/pages', 'Pages::index');
+
+//Administrasi
+
+
+//History
+
+
+
 
 
 /*
