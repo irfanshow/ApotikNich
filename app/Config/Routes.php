@@ -40,7 +40,7 @@ $routes->set404Override();
 $routes->get('/dashboard', 'Dashboard::index');
 
 //Obat
-$routes->get('/', 'Obat::index');
+$routes->get('/', 'Dashboard::index');
 $routes->get('/obat', 'Obat::index');
 $routes->get('/create', 'Obat::create');
 $routes->post('/saveObat', 'Obat::saveObat');
