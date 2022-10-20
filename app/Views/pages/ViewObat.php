@@ -13,7 +13,7 @@
             </tr>
         </thead>
         <tbody>
-            <?php?>
+            
             <?php foreach ($obat as $obat):?>
             <tr>
                 <td><?php echo $obat['nama_obat']; ?></td>
