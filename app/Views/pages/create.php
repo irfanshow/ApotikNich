@@ -1,13 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">    
-</head>
-<body>
+<?= $this -> extend('template/header')?>
+<?= $this-> section('contentAdmin')?>
+
+<main id="main" class="main">
     <div class="container">
         <div class="row">
             <div class="col-5">
@@ -29,11 +23,11 @@
                         <label for="deskripsi_obat">Deskripsi Obat</label>
                         <textarea  type="text" class="form-control" id="deskripsi_obat" rows="4" name="deskripsi_obat"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-primary mt-4 bi bi-send-fill">Submit</button>
                 </form>
             </div>
         </div>
     </div>
     
-</body>
-</html>
+</main>
+<?= $this -> endSection() ?>
