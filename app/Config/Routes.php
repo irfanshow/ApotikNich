@@ -37,10 +37,10 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 
 //Dashboard
-
+$routes->get('/dashboard', 'Dashboard::index');
 
 //Obat
-$routes->get('/', 'Obat::index');
+$routes->get('/', 'Dashboard::index');
 $routes->get('/obat', 'Obat::index');
 $routes->get('/create', 'Obat::create');
 $routes->post('/saveObat', 'Obat::saveObat');
@@ -50,10 +50,10 @@ $routes->delete('/delete/(:num)', 'Obat::delete/$1');
 $routes->get('/pages', 'Pages::index');
 
 //Administrasi
-
+$routes->get('/administrasi', 'Administrasi::index');
 
 //History
-
+$routes->get('/history', 'History::index');
 
 
 

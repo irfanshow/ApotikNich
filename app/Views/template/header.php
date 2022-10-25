@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Corona Admin</title>
+    <title>ApotikNich Admin</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="assets/CORONA/template/assets/vendors/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="assets/CORONA/template/assets/vendors/css/vendor.bundle.base.css">
@@ -28,8 +28,8 @@
       <!-- partial:partials/_sidebar.html -->
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
-          <a class="sidebar-brand brand-logo" href="index.html"><img src="assets/CORONA/template/assets/images/logo.svg" alt="logo" /></a>
-          <a class="sidebar-brand brand-logo-mini" href="index.html"><img src="assets/CORONA/template/assets/images/logo-mini.svg" alt="logo" /></a>
+          <a class="sidebar-brand brand-logo" href="/dashboard"><img src="assets/CORONA/template/assets/images/logoApotik.png" alt="logo" /></a>
+          <a class="sidebar-brand brand-logo-mini" href="/dashboard"><img src="assets/CORONA/template/assets/images/logoApotik.png" alt="logo" /></a>
         </div>
         <ul class="nav">
           <li class="nav-item profile">

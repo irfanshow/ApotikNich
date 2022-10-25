@@ -1,14 +1,8 @@
 <?= $this -> extend('template/header')?>
 <?= $this-> section('contentAdmin')?>
-
-<<<<<<< Updated upstream
-    <a href = "/create" class = "btn btn-primary m-3"> Tambah Obat </a>
-    <table class="table table-hover">
-=======
 <main id="main" class="main">
     <a href = "/create" class = "btn btn-primary m-3 bi bi-plus-square-fill"> Tambah Obat </a>
     <table class="table table-striped table-dark">
->>>>>>> Stashed changes
         <thead class="thead-dark">
             <tr>
                 <th scope="col">Nama Obat</th>
@@ -19,7 +13,7 @@
             </tr>
         </thead>
         <tbody>
-            <?php?>
+            
             <?php foreach ($obat as $obat):?>
             <tr>
                 <td><?php echo $obat['nama_obat']; ?></td>
@@ -39,10 +33,6 @@
             <?php endforeach; ?>
         </tbody>
     </table>
-<<<<<<< Updated upstream
-=======
-
-
 </main>
->>>>>>> Stashed changes
+
 <?= $this -> endSection() ?>
