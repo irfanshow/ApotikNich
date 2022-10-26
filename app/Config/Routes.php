@@ -36,11 +36,18 @@ $routes->set404Override();
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 
+$routes->get('/', 'functionUmum::viewLogin');
+
+//Login Admin
+$routes->get('/login', 'functionUmum::viewLogin');
+
+//Register Admin
+$routes->get('/register', 'functionUmum::viewRegister');
+
 //Dashboard
 $routes->get('/dashboard', 'Dashboard::index');
 
 //Obat
-$routes->get('/', 'Dashboard::index');
 $routes->get('/obat', 'Obat::index');
 $routes->get('/create', 'Obat::create');
 $routes->post('/saveObat', 'Obat::saveObat');

@@ -1,6 +1,17 @@
 <?= $this -> extend('template/header')?>
 <?= $this-> section('contentAdmin')?>
-    <main id="main" class="main">
+
+<main id="main" class="main">
+
+    <div class="pagetitle">
+      <h1>Obat</h1>
+      <nav>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active">Obat</li>
+        </ol>
+      </nav>
+    </div><!-- End Page Title -->
         
         <a href = "/create" class = "btn btn-primary m-3 bi bi-plus-square-fill"> Tambah Obat </a>
         <table class="table table-striped table-dark">
