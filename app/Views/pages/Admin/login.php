@@ -31,7 +31,7 @@
 						<div class="wrap-login100-form-btn">
 							<div class="login100-form-bgbtn"></div>
 							<button class="login100-form-btn">
-								<a href="/login_admin">Login</a>	
+								<a type="submit" value="Sign In" href="/login_admin" >Login</a>	
 							</button>
 						</div>
 					</div>
