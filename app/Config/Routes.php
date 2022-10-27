@@ -39,7 +39,11 @@ $routes->set404Override();
 $routes->get('/', 'functionUmum::viewLogin');
 
 //Login Admin
+//View
 $routes->get('/login', 'functionUmum::viewLogin');
+//Proses Login
+$routes->get('/login_admin', 'Administrasi::login_admin/$1');
+$routes->post('/login_admin', 'Administrasi::login_admin/$1');
 
 //Register Admin
 $routes->get('/register', 'functionUmum::viewRegister');
