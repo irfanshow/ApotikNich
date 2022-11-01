@@ -2,10 +2,17 @@
 <?= $this-> section('contentAdmin')?>
 
 <main id="main" class="main">
-    <div class="container">
-        <div class="row">
+    <div class="pagetitle">
+      <h1>Obat</h1>
+      <nav>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="/dashboard">Home</a></li>
+          <li class="breadcrumb-item active"> Obat / Tambah Data Obat</li>
+        </ol>
+      </nav>
+    </div><!-- End Page Title -->
+        <div class="form mt-5">
             <div class="col-5">
-                <h2 class="my-5"> Form Tambah Data Obat </h2>
                 <form method="POST" action="/saveObat">
                     <div class="form-group mb-3">
                         <label for="nama_obat">Nama Obat</label>
@@ -27,7 +34,6 @@
                 </form>
             </div>
         </div>
-    </div>
     
 </main>
 <?= $this -> endSection() ?>

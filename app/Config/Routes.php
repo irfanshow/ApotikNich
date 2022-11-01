@@ -49,7 +49,7 @@ $routes->post('/login_admin', 'Administrasi::login_admin/$1');
 $routes->get('/register', 'functionUmum::viewRegister');
 
 //Dashboard
-$routes->get('/dashboard', 'Dashboard::index');
+$routes->get('/dashboard', 'Dashboard::dashboard');
 
 //Obat
 $routes->get('/obat', 'Obat::index');
@@ -65,6 +65,14 @@ $routes->get('/administrasi', 'Administrasi::index');
 
 //History
 $routes->get('/history', 'History::index');
+
+//Kasir
+$routes->get('/kasir', 'Kasir::index');
+$routes->get('/tambahKasir', 'Kasir::tambahKasir');
+$routes->post('/saveDataKasir', 'Kasir::saveDataKasir');
+$routes->get('/editKasir/(:num)', 'Kasir::editKasir/$1');
+$routes->post('/updateKasir/(:num)', 'Kasir::updateKasir/$1');
+$routes->delete('/deleteKasir/(:num)', 'Kasir::deleteKasir/$1');
 
 
 
