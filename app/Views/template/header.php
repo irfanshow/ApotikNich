@@ -100,6 +100,13 @@
         </a>
       </li><!-- End Dashboard Nav -->
 
+      <li class="nav-item">
+        <a class="nav-link collapsed " href="/kasir">
+          <i class="bi bi-person"></i>
+          <span>Kasir</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+
 
       <li class="nav-item">
         <a class="nav-link collapsed" href="/obat">
