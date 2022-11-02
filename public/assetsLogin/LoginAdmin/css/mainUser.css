@@ -179,12 +179,14 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-color: #fff;
     
   }
   
   .wrap-login100 {
+    margin-left: 750px;
     width: 500px;
-    background: #365a81;
+    background: #2b5f97db;
     border-radius: 10px;
     overflow: hidden;
   }

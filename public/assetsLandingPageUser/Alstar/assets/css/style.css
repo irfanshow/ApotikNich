@@ -69,11 +69,11 @@ h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  height: 70px;
+  height: 80px;
   z-index: 997;
   transition: all 0.5s;
-  background: #00c1c1;
-  top: -70px;
+  background: #2b5f97;
+
 }
 
 #header.header-scrolled,
@@ -446,7 +446,7 @@ h6 {
   color: #fff;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
-  border: 2px solid #00c1c1;
+  border: 2px solid #365a81;
 }
 
 #hero .btn-get-started:hover {
