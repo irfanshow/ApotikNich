@@ -79,6 +79,10 @@ $routes->delete('/deleteKasir/(:num)', 'Kasir::deleteKasir/$1');
 //Landing Page User
 $routes->get('/landingPageUser', 'User\FunctionLandingPage::index');
 
+//Login User
+$routes->get('/loginUser', 'User\FunctionLoginRegisterUser::viewLoginUser');
+//register User
+$routes->get('/registerUser', 'User\FunctionLoginRegisterUser::viewRegisterUser');
 /*
  * --------------------------------------------------------------------
  * Additional Routing
