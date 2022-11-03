@@ -1,10 +1,7 @@
 <?= $this -> extend('template/headerUser')?>
 <?= $this-> section('contentUser')?>
 
-<<<<<<< Updated upstream
-
-=======
-    <!-- hero area -->
+<!-- hero area -->
 	<div class="hero-area hero-bg">
 		<div class="container">
 			<div class="row">
@@ -24,9 +21,9 @@
 	</div>
 	<!-- end hero area -->
     <!-- features list section -->
+    
 	<div class="list-section pt-80 pb-80">
 		<div class="container">
-
 			<div class="row">
 				<div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
 					<div class="list-box d-flex align-items-center">
@@ -62,10 +59,9 @@
 					</div>
 				</div>
 			</div>
->>>>>>> Stashed changes
-
 		</div>
 	</div>
+  
 	<!-- end features list section -->
     <!-- product section -->
 	<div class="product-section mt-150 mb-150">
