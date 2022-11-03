@@ -46,7 +46,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-10 col-sm-10 text-center">
-					<div class="main-menu-wrap">
+					<div class="main-menu-wrap align-middle">
 						<!-- logo -->
 						<div class="site-logo">
 							<a href="index.html">
@@ -58,9 +58,9 @@
 						<!-- menu start -->
 						<nav class="main-menu">
 							<ul>
-								<li class="current-list-item"><a href="#">Home</a></li>
-								<li><a href="#">About</a></li>
-                                <li><a href="#">Produk</a></li>
+								<li><a class="nav-link scrollto"><a href="#">Home</a></li>
+								<li><a class="nav-link scrollto" href="#">About</a></li>
+                                <li><a class="nav-link scrollto" href="#produk">Produk</a></li>
                                 <li><a href="/loginUser">Sign In</a></li>
                                 <li>
 									<div class="header-icons">
