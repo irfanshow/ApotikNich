@@ -45,7 +45,7 @@
 		<div class="top-header-area" id="sticker">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-10 col-sm-10 text-center">
+				<div class="col-lg-11 col-sm-12 text-center">
 					<div class="main-menu-wrap align-middle">
 						<!-- logo -->
 						<div class="site-logo">
@@ -59,7 +59,7 @@
 						<nav class="main-menu">
 							<ul>
 								<li><a class="nav-link scrollto"><a href="#">Home</a></li>
-								<li><a class="nav-link scrollto" href="#">About</a></li>
+								<li><a class="nav-link scrollto" href="#about">About</a></li>
                                 <li><a class="nav-link scrollto" href="#produk">Produk</a></li>
                                 <li><a href="/loginUser">Sign In</a></li>
                                 <li>
