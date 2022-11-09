@@ -75,7 +75,6 @@ $routes->post('/updateKasir/(:num)', 'Kasir::updateKasir/$1');
 $routes->delete('/deleteKasir/(:num)', 'Kasir::deleteKasir/$1');
 
 //USER
-
 //Landing Page User
 $routes->get('/landingPageUser', 'User\FunctionLandingPage::index');
 $routes->get('/SemuaObat', 'User\FunctionLandingPage::semuaObat');
