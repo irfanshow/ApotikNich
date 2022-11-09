@@ -78,6 +78,7 @@ $routes->delete('/deleteKasir/(:num)', 'Kasir::deleteKasir/$1');
 
 //Landing Page User
 $routes->get('/landingPageUser', 'User\FunctionLandingPage::index');
+$routes->get('/SemuaObat', 'User\FunctionLandingPage::semuaObat');
 
 //Login User
 $routes->get('/loginUser', 'User\FunctionLoginRegisterUser::viewLoginUser');

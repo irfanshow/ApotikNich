@@ -14,4 +14,8 @@ class DataObatModel extends Model
     public function countAllData(){
         return $this->countAllResults();
     }
+
+    public function getAllData(){
+        return $this->getResultArray();
+    }
 }
