@@ -11,7 +11,7 @@
 							<p class="subtitle">Health</p>
 							<h1>ApotikNich</h1>
 							<div class="hero-btns">
-								<a href="#" class="bordered-btn">Read More</a>
+								<a href="#produk" class="bordered-btn">Lihat Produk</a>
 							</div>
 						</div>
 					</div>

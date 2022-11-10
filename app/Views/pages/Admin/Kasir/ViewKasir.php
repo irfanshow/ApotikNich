@@ -14,13 +14,11 @@
     </div><!-- End Page Title -->
 
     <a href = "/tambahKasir" class = "btn btn-primary mb-5 bi bi-plus-square-fill"> Tambah Data Kasir </a>
-    <table class="table table-dark">
-            <thead class="thead-dark">
-                <tr>
+    <table class="table">
+            <thead class="table-dark">
                     <th scope="col">No</th>
                     <th scope="col">Nama Kasir</th>
                     <th scope="col">Action</th>
-                </tr>
             </thead>
             <tbody>
                 <?php foreach ($kasir as $kasir):?>
