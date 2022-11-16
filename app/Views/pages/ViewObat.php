@@ -21,6 +21,7 @@
                         <th scope="col">Nama Obat</th>
                         <th scope="col">Harga Obat</th>
                         <th scope="col">Stok Obat</th>
+                        <th scope="col">Foto Obat</th>
                         <th scope="col">Deskripsi Obat</th>
                         <th scope="col">Action</th>
                 </thead>
@@ -32,6 +33,7 @@
                         <td><?php echo $obat['nama_obat']; ?></td>
                         <td><?php echo $obat['harga_obat']; ?></td>
                         <td><?php echo $obat['stok_obat']; ?></td>
+                        <td><?php echo $obat['foto_obat']; ?></td>
                         <td><?php echo $obat['deskripsi_obat']; ?></td>
                         <td>
                             <div class="d-flex">

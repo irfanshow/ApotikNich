@@ -29,6 +29,10 @@ class DataObat extends Migration
                 'type' => 'text',
                 'constraint' => '1000',
             ],
+            'foto_obat' => [
+                'type' => 'VARCHAR',
+                'constraint' => '255',
+            ],
         ]);
         $this->forge->addKey('id_obat', true);
         $this->forge->createTable('data_obat');

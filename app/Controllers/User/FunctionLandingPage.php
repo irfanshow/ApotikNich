@@ -29,7 +29,7 @@ class FunctionLandingPage extends BaseController
         $data= [
             'title'=> 'DATA OBAT',
             // 'obat'=>$obat
-            'obat' => $obatModel->paginate(1,"page"),
+            'obat' => $obatModel->paginate(3,"page"),
             'pager' => $obatModel->pager,
         ];
         return view("pages/User/semuaObat",$data);

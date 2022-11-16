@@ -28,11 +28,13 @@ class Obat extends BaseController
 
     public function saveObat()
     {
+        $file = $this->request->getFile('foto_obat');
         if(!$this->validate([
             'nama_obat' => 'required',
             'harga_obat' =>'required',
             'stok_obat'=>'required',
-            'deskripsi_obat'=>'required'
+            'deskripsi_obat'=>'required',
+            // 'foto_obat'=>'required'
         ])){
             return redirect()->to('/create');
         }
@@ -41,10 +43,14 @@ class Obat extends BaseController
             'nama_obat' => $this->request->getPost('nama_obat'),
             'harga_obat'=> $this->request->getPost('harga_obat'),
             'stok_obat'=>$this->request->getPost('stok_obat'),
-            'deskripsi_obat'=>$this->request->getPost('deskripsi_obat')
+            'deskripsi_obat'=>$this->request->getPost('deskripsi_obat'),
+            'foto_obat'=>$this->request->getFile('foto_obat')
+
         ];
 
         $obatModel->save($data);
+        $nama = $file ->getRandomName();
+        $file->move(ROOTPATH . 'public/assets/img/',$nama);
         return redirect()->to('/obat');
     }
 
@@ -75,7 +81,8 @@ class Obat extends BaseController
             'nama_obat' => $this->request->getPost('nama_obat'),
             'harga_obat'=> $this->request->getPost('harga_obat'),
             'stok_obat'=>$this->request->getPost('stok_obat'),
-            'deskripsi_obat'=>$this->request->getPost('deskripsi_obat')
+            'deskripsi_obat'=>$this->request->getPost('deskripsi_obat'),
+            'foto_obat'=>$this->request->getFile('foto_obat')
         ];
 
         $obatModel->update($id_obat, $data);
