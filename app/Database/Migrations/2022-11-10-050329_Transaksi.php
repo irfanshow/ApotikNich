@@ -23,23 +23,22 @@ class Transaksi extends Migration
             ],
             'id_kasir' => [
                 'type'           => 'INT',
-                'constraint' => 50,
-            ],
-            'id_user' => [
-                'type'           => 'INT',
-                'constraint' => 50,
+              
             ],
             'id_obat' => [
                 'type'           => 'INT',
-                'constraint' => 50,
+              
             ],
             'id_jenis_pembayaran' => [
                 'type'           => 'INT',
-                'constraint' => 50,
+                
             ],
 
         ]);
         $this->forge->addKey('id_transaksi', true);
+        $this->forge->addForeignKey('id_kasir','kasir','id_kasir','CASCADE', 'CASCADE');
+        $this->forge->addForeignKey('id_obat','data_obat','id_obat','CASCADE', 'CASCADE');
+        $this->forge->addForeignKey('id_jenis_pembayaran','jenis_pembayaran','id_jenis_pembayaran','CASCADE', 'CASCADE');
         $this->forge->createTable('transaksi');
     }
 
@@ -47,4 +46,5 @@ class Transaksi extends Migration
     {
         $this->forge->dropTable('transaksi');
     }
+
 }

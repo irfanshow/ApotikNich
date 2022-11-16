@@ -1,6 +1,7 @@
 <?= $this -> extend('template/headerUser')?>
 <?= $this-> section('contentUser')?>
 
+
    <!-- hero area -->
    <div class="hero-area hero-bg">
 		<div class="container">
@@ -20,6 +21,7 @@
 		</div>
 	</div>
 	<!-- end hero area -->
+
    
     <!-- product section -->
     <section id="produk" class="produk">
@@ -35,6 +37,7 @@
 
                 <div class="row">
                 <?php foreach ($obat as $obat) : 
+
                     if ($obat['id_obat'] == 9) {
                         break;
                     }
@@ -43,6 +46,7 @@
                         <div class="single-product-item">
                             <div class="product-image">
                                 <a href="#"><img src="/assetsUser/fruit/assets/img/products/antanginnnn.png" alt=""></a>
+                                
                             </div>
                             <h3><?php echo $obat['nama_obat'];?></h3>
 

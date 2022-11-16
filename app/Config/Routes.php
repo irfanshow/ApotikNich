@@ -36,14 +36,15 @@ $routes->set404Override();
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 
-$routes->get('/', 'functionUmum::viewLogin');
+$routes->get('/', 'User\FunctionLandingPage::index');
 
 //Login Admin
 //View
 $routes->get('/login', 'functionUmum::viewLogin');
 //Proses Login
-$routes->get('/login_admin', 'Administrasi::login_admin/$1');
-$routes->post('/login_admin', 'Administrasi::login_admin/$1');
+$routes->post('/login_admin', 'Administrasi::login_admin');
+$routes->get('/login_admin', 'Administrasi::login_admin');
+
 
 //Register Admin
 $routes->get('/register', 'functionUmum::viewRegister');
@@ -77,6 +78,7 @@ $routes->delete('/deleteKasir/(:num)', 'Kasir::deleteKasir/$1');
 //USER
 //Landing Page User
 $routes->get('/landingPageUser', 'User\FunctionLandingPage::index');
+$routes->get('/SemuaObat', 'User\FunctionLandingPage::semuaObat');
 
 //KASIR
 //login Kasir

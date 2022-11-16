@@ -3,15 +3,12 @@
 namespace App\Controllers\User;
 
 use App\Controllers\BaseController;
+use App\Models\DataObatModel;
 
 class FunctionLandingPage extends BaseController
 {
     public function index()
     {
-<<<<<<< Updated upstream
-        return view("pages/User/landingPageUser");
-=======
-
         $obatModel = new DataObatModel();
         $obat = $obatModel->findAll();
      
@@ -35,6 +32,5 @@ class FunctionLandingPage extends BaseController
             'pager' => $obatModel->pager,
         ];
         return view("pages/User/semuaObat",$data);
->>>>>>> Stashed changes
     }
 }

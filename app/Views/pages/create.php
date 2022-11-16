@@ -13,7 +13,7 @@
     </div><!-- End Page Title -->
         <div class="form mt-5">
             <div class="col-5">
-                <form method="POST" action="/saveObat">
+                <form method="POST" action="/saveObat" enctype="multipart/form-data">
                     <div class="form-group mb-3">
                         <label for="nama_obat">Nama Obat</label>
                         <input type="text" class="form-control" id="nama_obat" name="nama_obat">
@@ -30,6 +30,12 @@
                         <label for="deskripsi_obat">Deskripsi Obat</label>
                         <textarea  type="text" class="form-control" id="deskripsi_obat" rows="4" name="deskripsi_obat"></textarea>
                     </div>
+
+                    <div class="form-group mt-3 mb-3">
+                        <label for="foto_obat">Foto Obat</label>
+                        <input type="file" class="form-control" id="foto_obat" name="foto_obat">
+                    </div>
+
                     <button type="submit" class="btn btn-primary mt-4 bi bi-send-fill">Submit</button>
                 </form>
             </div>
