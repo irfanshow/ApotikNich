@@ -1,9 +1,8 @@
-<?= $this -> extend('template/headerUser')?>
-<?= $this-> section('contentUser')?>
-
+<?= $this -> extend('template/headerKasir')?>
+<?= $this-> section('contentKasir')?>
 
    <!-- hero area -->
-   <div class="hero-area hero-bg">
+	<div class="hero-area hero-bg">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-8 offset-lg-2 text-center">
@@ -21,8 +20,6 @@
 		</div>
 	</div>
 	<!-- end hero area -->
-
-   
     <!-- product section -->
     <section id="produk" class="produk">
         <div class="product-section mt-150 mb-150">
@@ -37,16 +34,13 @@
 
                 <div class="row">
                 <?php foreach ($obat as $obat) : 
-
                     if ($obat['id_obat'] == 9) {
                         break;
-                    }
-                    ?>
+                    }?>
                     <div class="col-lg-4 col-md-6 text-center">
                         <div class="single-product-item">
                             <div class="product-image">
                                 <a href="#"><img src="/assetsUser/fruit/assets/img/products/antanginnnn.png" alt=""></a>
-                                
                             </div>
                             <h3><?php echo $obat['nama_obat'];?></h3>
 
@@ -57,13 +51,15 @@
                         </div>
                     </div>
                     <?php endforeach; ?>
-                  
+                    
             </div>
             <div class="text-center ">
                  <?= $pager->links('page','bootstrap') ?>
             </div>
-
         </div>
+                    
+
+    </section>
                     
 
     </section>

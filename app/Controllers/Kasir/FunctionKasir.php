@@ -1,14 +1,12 @@
 <?php
-
-namespace App\Controllers\User;
-
+namespace App\Controllers\Kasir;
 use App\Controllers\BaseController;
 use App\Models\DataObatModel;
 
-class FunctionLandingPage extends BaseController
-{
+class FunctionKasir extends BaseController{
     public function index()
     {
+
         $obatModel = new DataObatModel();
         $obat = $obatModel->findAll();
      
@@ -16,10 +14,9 @@ class FunctionLandingPage extends BaseController
             'title'=> 'DATA OBAT',
             'obat'=>$obat
         ];
-        return view("pages/User/landingPageUser",$data);
+        return view("pages/Kasir/landingPageKasir",$data);
     }
-
-    public function semuaObat()
+    public function semuaObatKasir()
     {
         $pager = \Config\Services::pager();
         $obatModel = new DataObatModel();
@@ -31,6 +28,16 @@ class FunctionLandingPage extends BaseController
             'obat' => $obatModel->paginate(9,"page"),
             'pager' => $obatModel->pager,
         ];
-        return view("pages/User/semuaObat",$data);
+        return view("pages/Kasir/semuaObatKasir",$data);
+    }
+    public function cartView(){
+        $obatModel = new DataObatModel();
+        $obat = $obatModel->findAll();
+     
+        $data= [
+            'title'=> 'DATA OBAT',
+            'obat'=>$obat
+        ];
+        return view("pages/Kasir/cart",$data);
     }
 }
