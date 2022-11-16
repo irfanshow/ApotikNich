@@ -36,7 +36,7 @@
 
                 <div class="row">
                 <?php foreach ($obat as $obat) : 
-                    if ($obat['id_obat'] == 9) {
+                    if ($obat['id_obat'] == 4) {
                         break;
                     }?>
                     <div class="col-lg-4 col-md-6 text-center">
@@ -48,6 +48,7 @@
 
 
                             <p class="product-price"> Rp.<?php echo $obat['harga_obat'];?> </p>
+                            <a href="#" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
 
                             <!-- <a href="#" class="cart-btn"><i class="fas fa-shopping-cart"></i> Tambahkan </a> -->
                         </div>
