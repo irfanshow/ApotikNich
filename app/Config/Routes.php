@@ -66,7 +66,7 @@ $routes->get('/administrasi', 'Administrasi::index');
 //History
 $routes->get('/history', 'History::index');
 
-//Kasir
+//Kasir (ADMIN)
 $routes->get('/kasir', 'Kasir::index');
 $routes->get('/tambahKasir', 'Kasir::tambahKasir');
 $routes->post('/saveDataKasir', 'Kasir::saveDataKasir');
@@ -78,10 +78,15 @@ $routes->delete('/deleteKasir/(:num)', 'Kasir::deleteKasir/$1');
 //Landing Page User
 $routes->get('/landingPageUser', 'User\FunctionLandingPage::index');
 
-//Login User
-$routes->get('/loginUser', 'User\FunctionLoginRegisterUser::viewLoginUser');
-//register User
-$routes->get('/registerUser', 'User\FunctionLoginRegisterUser::viewRegisterUser');
+//KASIR
+//login Kasir
+$routes->get('/loginKasir', 'Kasir\FunctionLoginRegisterKasir::viewLoginKasir');
+//register Kasir
+//$routes->get('/registerUser', 'User\FunctionLoginRegisterUser::viewRegisterUser');
+$routes->get('/landingPageKasir', 'Kasir\FunctionKasir::index');
+$routes->get('/SemuaObatKasir', 'Kasir\FunctionKasir::semuaObatKasir');
+$routes->get('/cartView', 'Kasir\FunctionKasir::cartView');
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing

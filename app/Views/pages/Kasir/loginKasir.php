@@ -6,7 +6,7 @@
 			<div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
 				<form class="login100-form validate-form">
 					<span class="login100-form-title p-b-49">
-						Login
+						Login Kasir
 					</span>
 
 					<div class="wrap-input100 validate-input m-b-23" data-validate = "Username is reauired">
@@ -34,19 +34,6 @@
 								<a type="submit" value="Sign In" href="#" >Login</a>	
 							</button>
 						</div>
-					</div>
-
-					<div class="flex-col-c p-t-50">
-						<span class="txt1 p-b-17">
-							Or Sign Up Using
-						</span>
-
-						<a href="/registerUser" class="txt2">
-							Sign Up
-						</a>
-						<a href="/landingPageUser" class="txt2">
-							Home
-						</a>
 					</div>
 				</form>
 			</div>
