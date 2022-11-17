@@ -27,7 +27,7 @@ class Administrasi extends BaseController
                 $ses_data = [
                     'id'       => $data['id_admin'],
                     'username'     => $data['username'],
-                    'logged_in'     => TRUE
+
                 ];
                 session()->set($ses_data);
                 return redirect()->to('/dashboard',);

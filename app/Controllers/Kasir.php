@@ -29,12 +29,16 @@ class Kasir extends BaseController
     {
         if(!$this->validate([
             'nama_kasir' => 'required',
+            'username'=>'required',
+            'password'=>'required',
         ])){
             return redirect()->to('/tambahKasir');
         }
         $KasirModel = new DataKasirModel();
         $data=[
             'nama_kasir' => $this->request->getPost('nama_kasir'),
+            'username' => $this->request->getPost('username'),
+            'password' => password_hash($this->request->getVar('password'), PASSWORD_BCRYPT),
         ];
 
         $KasirModel->save($data);
@@ -54,13 +58,17 @@ class Kasir extends BaseController
     public function updateKasir($id_kasir)
     {
         if(!$this->validate([
-            'nama_kasir' => 'required', 
+            'nama_kasir' => 'required',
+            'username' =>'required',
+            'password' =>'required'
         ])){
             return redirect()->to('/editKasir/'.$id_kasir);
         }
         $KasirModel = new DataKasirModel();
         $data=[
             'nama_kasir' => $this->request->getPost('nama_kasir'),
+            'username' => $this->request->getPost('username'),
+            'password' => password_hash($this->request->getVar('password'), PASSWORD_BCRYPT),
         ];
 
         $KasirModel->update($id_kasir, $data);
