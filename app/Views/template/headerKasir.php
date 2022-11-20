@@ -58,8 +58,8 @@
 						<!-- menu start -->
 						<nav class="main-menu">
 							<ul>
-								<li><a class="nav-link scrollto"><a href="#">Home</a></li>
-                                <li><a class="nav-link scrollto" href="#produk">Produk</a></li>
+								<li><a class="nav-link scrollto"><a href="/landingPageKasir">Home</a></li>
+                                <li><a class="nav-link scrollto" href="/landingPageKasir#produk">Produk</a></li>
                                 <li>
 									<div class="header-icons">
 										<a class="shopping-cart" href="/cartView"><i class="fas fa-shopping-cart"></i></a>
