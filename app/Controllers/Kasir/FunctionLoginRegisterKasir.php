@@ -28,7 +28,8 @@ class FunctionLoginRegisterKasir extends BaseController{
                     'username'     => $data['username'],
                 ];
                 session()->set($ses_data);
-                return redirect()->to('/cartView',);
+                return redirect()->to('/landingPageKasir',);
+
             }
             else{
                 session()->setFlashdata('msg', 'Wrong Password');
@@ -40,5 +41,3 @@ class FunctionLoginRegisterKasir extends BaseController{
             return redirect()->to('/loginKasir');
         }
     }
-
-}
