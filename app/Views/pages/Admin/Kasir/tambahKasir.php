@@ -18,6 +18,21 @@
                     <label for="nama_kasir">Nama Kasir</label>
                     <input type="text" class="form-control" id="nama_kasir" name="nama_kasir">
                 </div>
+<<<<<<< Updated upstream
+=======
+
+                <div class="form-group mb-3">
+                    <label for="nama_kasir">UserName</label>
+                    <input type="text" class="form-control" id="username" name="username">
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="nama_kasir">Password</label>
+                    <input type="text" class="form-control" id="password" name="password">
+                </div>
+
+
+>>>>>>> Stashed changes
                 <button type="submit" class="btn btn-primary mt-4 bi bi-send-fill">Submit</button>
             </form>
         </div>
