@@ -18,6 +18,8 @@
             <thead class="table-dark">
                     <th scope="col">No</th>
                     <th scope="col">Nama Kasir</th>
+                    <th scope="col">User Name</th>
+                    <th scope="col">Password</th>
                     <th scope="col">Action</th>
             </thead>
             <tbody>
@@ -25,6 +27,8 @@
                 <tr>
                     <td><?php echo $kasir['id_kasir'];?></td><br>
                     <td><?php echo $kasir['nama_kasir']; ?></td>
+                    <td><?php echo $kasir['username']; ?></td>
+                    <td><?php echo $kasir['password']; ?></td>
                     <td>
                         <div class="d-flex">
                             <div class="box">

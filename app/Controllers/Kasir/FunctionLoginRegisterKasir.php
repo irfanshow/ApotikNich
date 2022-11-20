@@ -1,6 +1,7 @@
 <?php
 namespace App\Controllers\Kasir;
 use App\Controllers\BaseController;
+use App\Models\DataKasirModel;
 
 class FunctionLoginRegisterKasir extends BaseController{
     public function viewLoginKasir(){
@@ -9,8 +10,6 @@ class FunctionLoginRegisterKasir extends BaseController{
     public function viewRegisterKasir(){
         return view('pages\User\registerKasir');
     }
-<<<<<<< Updated upstream
-=======
 
     public function login_kasir(){
         $session = session();
@@ -30,6 +29,7 @@ class FunctionLoginRegisterKasir extends BaseController{
                 ];
                 session()->set($ses_data);
                 return redirect()->to('/landingPageKasir',);
+
             }
             else{
                 session()->setFlashdata('msg', 'Wrong Password');
@@ -41,6 +41,3 @@ class FunctionLoginRegisterKasir extends BaseController{
             return redirect()->to('/loginKasir');
         }
     }
-
->>>>>>> Stashed changes
-}

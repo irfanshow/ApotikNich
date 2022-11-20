@@ -44,13 +44,9 @@
                     ?>
                     <div class="col-lg-4 col-md-6 text-center">
                         <div class="single-product-item">
-<<<<<<< Updated upstream
-                            <div class="product-image">
-                                <a href="#"><img src="/assetsUser/fruit/assets/img/products/antanginnnn.png" alt=""></a>
-=======
+
                             <div class="product-image ">
                                 <a href="#"><img src="/assets/img/<?=$obat['foto_obat']?>" alt="Tidak ada foto"></a>
->>>>>>> Stashed changes
                                 
                             </div>
                             <h3><?php echo $obat['nama_obat'];?></h3>

@@ -18,6 +18,16 @@
                     <label for="nama_kasir">Nama Obat</label>
                     <input type="text" class="form-control" id="nama_kasir" name="nama_kasir" value="<?= $kasir['nama_kasir'] ?>">
                 </div>
+
+                <div class="form-group mb-3">
+                    <label for="nama_kasir">User Name</label>
+                    <input type="text" class="form-control" id="username" name="username" value="<?= $kasir['username'] ?>">
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="nama_kasir">Password</label>
+                    <input type="text" class="form-control" id="password" name="password" value="<?= $kasir['password'] ?>">
+                </div>
                 <button type="submit" class="btn btn-primary mt-4 bi bi-send-fill">Submit</button>
             </form>
         </div>

@@ -57,7 +57,7 @@
                     <div class="col-lg-4 col-md-6 text-center">
                         <div class="single-product-item">
                             <div class="product-image">
-                                <a href="#"><img src="/assetsUser/fruit/assets/img/products/antanginnnn.png" alt=""></a>
+                                <a href="#"><img src="/assets/img/<?=$obat['foto_obat']?>" alt=""></a>
                             </div>
                             <h3><?php echo $obat['nama_obat'];?></h3>
 

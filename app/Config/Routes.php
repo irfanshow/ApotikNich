@@ -83,11 +83,9 @@ $routes->get('/SemuaObat', 'User\FunctionLandingPage::semuaObat');
 //KASIR
 //login Kasir
 $routes->get('/loginKasir', 'Kasir\FunctionLoginRegisterKasir::viewLoginKasir');
-<<<<<<< Updated upstream
-=======
 $routes->post('/login_kasir_proses', 'Kasir\FunctionLoginRegisterKasir::login_kasir');
 $routes->get('/login_kasir_proses', 'Kasir\FunctionLoginRegisterKasir::login_kasir');
->>>>>>> Stashed changes
+
 //register Kasir
 //$routes->get('/registerUser', 'User\FunctionLoginRegisterUser::viewRegisterUser');
 $routes->get('/landingPageKasir', 'Kasir\FunctionKasir::index');
