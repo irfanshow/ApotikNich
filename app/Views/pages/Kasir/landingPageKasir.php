@@ -36,7 +36,7 @@
 
                 <div class="row">
                 <?php foreach ($obat as $obat) : 
-                    if ($obat['id_obat'] == 4) {
+                    if ($obat['id_obat'] == 5) {
                         break;
                     }?>
                     <div class="col-lg-4 col-md-6 text-center">
