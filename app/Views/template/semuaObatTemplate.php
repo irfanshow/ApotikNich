@@ -49,7 +49,7 @@
 					<div class="main-menu-wrap align-middle">
 						<!-- logo -->
 						<div class="site-logo">
-							<a href="/landingPageKasir">
+							<a href="index.html">
 								<img src="/assetsUser/fruit/assets/img/apotik.png" alt="">
 							</a>
 						</div>
@@ -58,12 +58,10 @@
 						<!-- menu start -->
 						<nav class="main-menu">
 							<ul>
-								<li><a class="nav-link scrollto"><a href="/landingPageKasir">Home</a></li>
-                                <li><a class="nav-link scrollto" href="/landingPageKasir#produk">Produk</a></li>
+								<li><a class="nav-link scrollto"><a href="/">Home</a></li>
                                 <li>
 									<div class="header-icons">
-										<a class="shopping-cart" href="/cartView"><i class="fas fa-shopping-cart"></i></a>
-                                        <a class="nav-link scrollto" href="/loginKasir">Logout</a>
+										<!-- <a class="shopping-cart" href="#"><i class="fas fa-shopping-cart"></i></a> -->
 									</div>
 								</li>
 							</ul>
@@ -98,7 +96,7 @@
 	<script src="/assetsUser/fruit/assets/js/sticker.js"></script>
 	<!-- main js -->
 	<script src="/assetsUser/fruit/assets/js/main.js"></script>
-    <?= $this->renderSection('contentKasir') ?>
+    <?= $this->renderSection('contentSemuaObat') ?>
 
 </body>
 </html>
