@@ -41,3 +41,4 @@ class FunctionLoginRegisterKasir extends BaseController{
             return redirect()->to('/loginKasir');
         }
     }
+}

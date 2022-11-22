@@ -21,9 +21,13 @@ class FunctionLandingPage extends BaseController
 
     public function semuaObat()
     {
+ 
         $pager = \Config\Services::pager();
         $obatModel = new DataObatModel();
         $obat = $obatModel->findAll();
+
+
+
      
         $data= [
             'title'=> 'DATA OBAT',
@@ -32,5 +36,13 @@ class FunctionLandingPage extends BaseController
             'pager' => $obatModel->pager,
         ];
         return view("pages/User/semuaObat",$data);
+    }
+
+    public function mencariObat(){
+        $obatModel = new DataObatModel();
+        $keyword = $this->request->getGet('keyword');
+        
+        $cariObat = $this->obatModel->cari($keyword);
+        return view("pages/User/semuaObat",$cariObat);
     }
 }

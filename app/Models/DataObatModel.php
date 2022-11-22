@@ -18,4 +18,12 @@ class DataObatModel extends Model
     public function getAllData(){
         return $this->getResultArray();
     }
+
+    public function cari($data,$keyword){
+        $builder = $this -> builder();
+        if($keyword !== ''){
+            $builder->like('nama_obat',$keyword);
+            
+        }
+    }
 }

@@ -2,25 +2,6 @@
 <?= $this-> section('contentSemuaObat')?>
 
 
-   <!-- hero area -->
-   <div class="hero-area hero-bg">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-8 offset-lg-2 text-center">
-					<div class="hero-text">
-						<div class="hero-text-tablecell">
-							<p class="subtitle">Health</p>
-							<h1>ApotikNich</h1>
-							<div class="hero-btns">
-								<a href="#produk" class="bordered-btn">Lihat Produk</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- end hero area -->
 
    
     <!-- product section -->
@@ -34,6 +15,16 @@
                         </div>
                     </div>
                 </div>
+
+                <form action="" method="get" class="form-inline mb-2">
+                    <div>
+                        <input type="text" name="keyword" value="" class="form-control" placeholder="Cari Obat" style="width:155pt">
+                    </div>
+
+                    <div>
+                        <button type="submit" class="btn btn-primary ml-1">Cari</button>
+                    </div>
+                </form>
 
                 <div class="row">
                 <?php foreach ($obat as $obat) : 
