@@ -26,4 +26,6 @@ class DataObatModel extends Model
             
         }
     }
+
+
 }

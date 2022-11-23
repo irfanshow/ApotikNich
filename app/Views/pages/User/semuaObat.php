@@ -15,7 +15,7 @@
                         </div>
                     </div>
                 </div>
-
+<!-- 
                 <form action="" method="get" class="form-inline mb-2">
                     <div>
                         <input type="text" name="keyword" value="" class="form-control" placeholder="Cari Obat" style="width:155pt">
@@ -24,7 +24,7 @@
                     <div>
                         <button type="submit" class="btn btn-primary ml-1">Cari</button>
                     </div>
-                </form>
+                </form> -->
 
                 <div class="row">
                 <?php foreach ($obat as $obat) : 
