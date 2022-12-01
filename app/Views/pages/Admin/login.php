@@ -32,20 +32,12 @@
 						<div class="wrap-login100-form-btn">
 							<div class="login100-form-bgbtn"></div>
 							<button class="login100-form-btn">
-								<a type="submit" value="Sign In" href="/login_admin" >Login</a>	
+								<a type="submit" value="Sign In" href="/dashboard" >Login</a>	
 							</button>
 						</div>
 					</div>
 
-					<div class="flex-col-c p-t-50">
-						<span class="txt1 p-b-17">
-							Or Sign Up Using
-						</span>
-
-						<a href="/register" class="txt2">
-							Sign Up
-						</a>
-					</div>
+					
 				</form>
 			</div>
 		</div>
